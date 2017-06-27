@@ -35,7 +35,7 @@ function cusView(){
 		// list the id, name, price, and units left of the product
 
 		for(var i in res){
-			console.log("ID: " + res[i].item_id + " | Product:" + res[i].product_name + " | Price: " + res[i].price + " | Current Stock: " + res[i].stock_quantitiy + '\n');
+			console.log("ID: " + res[i].item_id + " | Product: " + res[i].product_name + " | Price: " + res[i].price + " | Current Stock: " + res[i].stock_quantitiy + '\n');
 		};
 
 		inquirer.prompt([
