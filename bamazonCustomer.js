@@ -84,7 +84,8 @@ function cusView(){
 						else{
 							cusView();
 						}
-					})
+					});
+
 				}
 				else if(numBuy > itemStock){
 					console.log('Insufficient quantity!');
@@ -111,8 +112,9 @@ function cusPurchase(){
       }
     ],
     function(error) {
-      if (error) throw err;
+      if (error) throw error;
       console.log("Purchase was successful! Total cost of $" + totalPrice);
+      connection.end();
     }
   );
 }
