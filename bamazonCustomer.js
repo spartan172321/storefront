@@ -44,7 +44,7 @@ function cusView(){
 				message: "What is the ID of the item you wish to buy?\n",
 				name: "id",
 				validate: function(id) {
-          if (isNaN(id) === false && parseInt(id) <= res.length) {
+          if (isNaN(id) === false && parseInt(id) <= res.length && parseInt(id) > 0) {
             return true;
           }
           else{

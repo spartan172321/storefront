@@ -89,7 +89,7 @@ function addStock(){
 				message: "What is the id of the product you would like to add to?\n",
 				name: "item",
 				validate: function(item) {
-	        if (isNaN(item) === false && parseInt(item) <= res.length) {
+	        if (isNaN(item) === false && parseInt(item) <= res.length && parseInt(item) > 0) {
 	          return true;
 	        }
 	        else{
